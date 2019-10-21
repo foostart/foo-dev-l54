@@ -195,6 +195,45 @@ INSERT INTO `permission` VALUES (1,'','superadmin','','_superadmin',0,'2019-10-2
 UNLOCK TABLES;
 
 --
+-- Table structure for table `posts`
+--
+
+DROP TABLE IF EXISTS `posts`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `posts` (
+  `post_id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) DEFAULT NULL,
+  `user_email` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `user_full_name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `category_id` int(11) DEFAULT NULL,
+  `slideshow_id` int(11) DEFAULT NULL,
+  `post_name` varchar(500) CHARACTER SET utf8 DEFAULT NULL,
+  `post_slug` varchar(500) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `post_overview` varchar(1000) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `post_description` longtext COLLATE utf8_unicode_ci,
+  `post_image` varchar(255) CHARACTER SET utf8 DEFAULT NULL,
+  `post_files` varchar(10000) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `post_status` tinyint(4) DEFAULT NULL,
+  `cache_comments` text COLLATE utf8_unicode_ci,
+  `cache_other_posts` text COLLATE utf8_unicode_ci,
+  `cache_time` int(11) DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`post_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `posts`
+--
+
+LOCK TABLES `posts` WRITE;
+/*!40000 ALTER TABLE `posts` DISABLE KEYS */;
+/*!40000 ALTER TABLE `posts` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `profile_field`
 --
 
@@ -391,4 +430,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-10-21 13:39:27
+-- Dump completed on 2019-10-21 13:42:34

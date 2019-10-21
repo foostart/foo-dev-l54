@@ -56,5 +56,12 @@ class Kernel extends HttpKernel
         'can' => \Illuminate\Auth\Middleware\Authorize::class,
         'guest' => \App\Http\Middleware\RedirectIfAuthenticated::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
+
+        //My packages
+        'admin_logged' => \LaravelAcl\Http\Middleware\AdminLogged::class,
+        'logged' => \LaravelAcl\Http\Middleware\Logged::class,
+        'can_see' => \LaravelAcl\Http\Middleware\CanSee::class,
+        'has_perm' => \LaravelAcl\Http\Middleware\HasPerm::class,
+        'in_context' => \Foostart\Category\Middleware\InContext::class,
     ];
 }

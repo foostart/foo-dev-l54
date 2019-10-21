@@ -1,0 +1,1 @@
+php artisan vendor:publish --provider="Foostart\Front\FrontServiceProvider" --force

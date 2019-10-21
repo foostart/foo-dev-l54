@@ -178,7 +178,8 @@ return [
         App\Providers\RouteServiceProvider::class,
 
         //My packages
-        LaravelAcl\Authentication\AuthenticationServiceProvider::class
+        LaravelAcl\Authentication\AuthenticationServiceProvider::class,
+        Foostart\Category\CategoryServiceProvider::class,
     ],
 
     /*

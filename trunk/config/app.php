@@ -166,8 +166,16 @@ return [
         /*
          * Package Service Providers...
          */
-        Laravel\Tinker\TinkerServiceProvider::class,
+        UniSharp\LaravelFilemanager\LaravelFilemanagerServiceProvider::class, 
+        Intervention\Image\ImageServiceProvider::class,
 
+        Laravel\Tinker\TinkerServiceProvider::class,
+        LaravelAcl\Authentication\AuthenticationServiceProvider::class,
+        
+        Foostart\Category\CategoryServiceProvider::class,
+        Foostart\Post\PostServiceProvider::class,
+        Foostart\Slideshow\SlideshowServiceProvider::class,
+        Foostart\Api\ApiServiceProvider::class,
         /*
          * Application Service Providers...
          */
@@ -191,6 +199,7 @@ return [
     */
 
     'aliases' => [
+        'Image' => Intervention\Image\Facades\Image::class,
 
         'App' => Illuminate\Support\Facades\App::class,
         'Artisan' => Illuminate\Support\Facades\Artisan::class,

@@ -288,75 +288,6 @@ LOCK TABLES `profile_field_type` WRITE;
 UNLOCK TABLES;
 
 --
--- Table structure for table `slideshow_styles`
---
-
-DROP TABLE IF EXISTS `slideshow_styles`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `slideshow_styles` (
-  `style_id` int(11) NOT NULL AUTO_INCREMENT,
-  `user_id` int(11) DEFAULT NULL,
-  `user_email` varchar(55) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `user_full_name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `style_name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `style_image` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `style_view_file` varchar(55) CHARACTER SET utf8 DEFAULT NULL,
-  `style_js_file` varchar(1000) CHARACTER SET utf8 DEFAULT NULL,
-  `style_css_file` varchar(1000) CHARACTER SET utf8 DEFAULT NULL,
-  `style_view_content` text COLLATE utf8_unicode_ci,
-  `style_status` tinyint(4) DEFAULT NULL,
-  `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL,
-  PRIMARY KEY (`style_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `slideshow_styles`
---
-
-LOCK TABLES `slideshow_styles` WRITE;
-/*!40000 ALTER TABLE `slideshow_styles` DISABLE KEYS */;
-/*!40000 ALTER TABLE `slideshow_styles` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `slideshows`
---
-
-DROP TABLE IF EXISTS `slideshows`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `slideshows` (
-  `slideshow_id` int(11) NOT NULL AUTO_INCREMENT,
-  `style_id` int(11) DEFAULT NULL,
-  `user_id` int(11) DEFAULT NULL,
-  `user_email` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `user_full_name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `category_id` int(11) DEFAULT NULL,
-  `slideshow_name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `slideshow_overview` text COLLATE utf8_unicode_ci,
-  `slideshow_description` text COLLATE utf8_unicode_ci,
-  `slideshow_image` varchar(255) CHARACTER SET utf8 DEFAULT NULL,
-  `slideshow_images` text COLLATE utf8_unicode_ci,
-  `slideshow_status` tinyint(4) DEFAULT NULL,
-  `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL,
-  PRIMARY KEY (`slideshow_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `slideshows`
---
-
-LOCK TABLES `slideshows` WRITE;
-/*!40000 ALTER TABLE `slideshows` DISABLE KEYS */;
-/*!40000 ALTER TABLE `slideshows` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `throttle`
 --
 
@@ -499,4 +430,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-10-21 13:47:48
+-- Dump completed on 2019-10-21 13:42:34

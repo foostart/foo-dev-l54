@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ce5eb58768c3280d9d778e65f4dc4fac",
+    "content-hash": "5110150f3b687aa26ea1e6670f897286",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -251,47 +251,6 @@
             "time": "2019-06-04T03:31:32+00:00"
         },
         {
-            "name": "foostart/package-post",
-            "version": "5.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/foostart/package-post.git",
-                "reference": "1d26ebaa3f2384b744fb341c8080946f7f6d5d0a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/foostart/package-post/zipball/1d26ebaa3f2384b744fb341c8080946f7f6d5d0a",
-                "reference": "1d26ebaa3f2384b744fb341c8080946f7f6d5d0a",
-                "shasum": ""
-            },
-            "require": {
-                "foostart/package-slideshow": "*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Foostart\\Post\\": "/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "FooStart",
-                    "email": "foostart.com@gmail.com",
-                    "homepage": "http://foostart.com"
-                }
-            ],
-            "description": "Manage post",
-            "keywords": [
-                "foostart",
-                "laravel 5 package post"
-            ],
-            "time": "2019-06-04T03:31:10+00:00"
-        },
-        {
             "name": "foostart/package-sentry",
             "version": "5.0.0",
             "source": {
@@ -366,44 +325,6 @@
                 "security"
             ],
             "time": "2019-03-11T08:53:06+00:00"
-        },
-        {
-            "name": "foostart/package-slideshow",
-            "version": "5.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/foostart/package-slideshow.git",
-                "reference": "4b02809791017915e6db76aa4530acfc5732eecc"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/foostart/package-slideshow/zipball/4b02809791017915e6db76aa4530acfc5732eecc",
-                "reference": "4b02809791017915e6db76aa4530acfc5732eecc",
-                "shasum": ""
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Foostart\\Slideshow\\": "/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "FooStart",
-                    "email": "foostart.com@gmail.com",
-                    "homepage": "http://foostart.com"
-                }
-            ],
-            "description": "Create overview slideshow can intergrate other project",
-            "keywords": [
-                "foostart",
-                "laravel 5 package slideshow"
-            ],
-            "time": "2019-04-07T16:46:58+00:00"
         },
         {
             "name": "gregwar/captcha",
@@ -2560,80 +2481,6 @@
             "description": "CssToInlineStyles is a class that enables you to convert HTML-pages/files into HTML-pages/files with inline styles. This is very useful when you're sending emails.",
             "homepage": "https://github.com/tijsverkoyen/CssToInlineStyles",
             "time": "2017-11-27T11:13:29+00:00"
-        },
-        {
-            "name": "unisharp/laravel-filemanager",
-            "version": "v1.9.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/UniSharp/laravel-filemanager.git",
-                "reference": "aaf2764f26eb8dcc9356bea1e25010333c2e61f4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/UniSharp/laravel-filemanager/zipball/aaf2764f26eb8dcc9356bea1e25010333c2e61f4",
-                "reference": "aaf2764f26eb8dcc9356bea1e25010333c2e61f4",
-                "shasum": ""
-            },
-            "require": {
-                "ext-exif": "*",
-                "ext-fileinfo": "*",
-                "illuminate/support": ">=4.2.0",
-                "intervention/image": "2.*",
-                "php": ">=5.4.0"
-            },
-            "require-dev": {
-                "orchestra/testbench": "~3.0",
-                "phpspec/phpspec": "~2.1",
-                "phpunit/phpunit": "~4.8"
-            },
-            "suggest": {
-                "ext-gd": "to use GD library based image processing.",
-                "ext-imagick": "to use Imagick based image processing."
-            },
-            "bin": [
-                "bin/debug"
-            ],
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "UniSharp\\LaravelFilemanager\\LaravelFilemanagerServiceProvider"
-                    ],
-                    "aliases": []
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "UniSharp\\LaravelFilemanager\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Trevor Sawler",
-                    "email": "trevor.sawler@gmail.com"
-                },
-                {
-                    "name": "UniSharp Ltd.",
-                    "email": "unisharp-service@unisharp.com"
-                }
-            ],
-            "description": "A file upload/editor intended for use with Laravel 5 and CKEditor / TinyMCE",
-            "keywords": [
-                "CKEditor",
-                "file",
-                "filemanager",
-                "image",
-                "laravel",
-                "manager",
-                "tinymce",
-                "upload"
-            ],
-            "time": "2018-07-05T11:36:08+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
